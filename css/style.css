@@ -1,0 +1,425 @@
+body {
+	background-color: #F0EBD8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Baloo Tammudu', cursive;
+}
+
+p,
+blockquote {
+	font-family: 'Prompt', sans-serif;
+}
+
+
+/*the header classsssssssssss*/
+header {
+	/*background-color: #f0f0f0;*/
+	background-image: url(../images/bike.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	/**/
+	min-height: 400px;
+	padding: 10px;
+	padding-top: 40px;
+	position: relative
+}
+
+.sabog:after {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border-top: 15px solid #2e2b32;
+	border-left: 15px solid transparent;
+	/*border-bottom:60px solid white;*/
+	border-right: 15px solid transparent;
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+	/*imageintro*/
+.image-contain {
+	position: relative;
+	min-height: 225px;
+}
+
+.image-id {
+	height: 225px;
+	width: 225px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	/*TENTATIVE ID: alternative*/
+	background-image: url(../images/id.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	border: none;
+	border-radius: 10px 0px 10px 0px;
+}
+
+/*TENTATIVE ID*/
+/*.image-id img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+*/
+.image-id:before {
+	content: "";
+	width: 110%;
+	height: 110%;
+	border:1px solid white;
+	border-radius: 10px 0px 10px 0px;
+	/**/
+	position: absolute;
+	right: -10%;
+	bottom: -10%;
+	/*transform: rotate(30deg);*/
+	z-index: 0;
+}
+
+.image-id:after {
+	content: "";
+	width: 110%;
+	height: 110%;
+	border:1px solid white;
+	border-radius: 10px 0px 10px 0px;
+	/**/
+	position: absolute;
+	left: -10%;
+	top: -10%;
+	/*transform: rotate(60deg);*/
+	z-index: 0;
+}
+
+.image-id .inner {
+	width: 110%;
+	height: 110%;
+	border:1px solid white;
+	/**/
+	position: absolute;
+	left: -5%;
+	top: -5%;
+	/*transform: rotate(60deg);*/
+	z-index: 0;
+}
+
+
+/*introduction text*/
+h1 {
+	color: white;
+}
+
+h1 span {
+	color: inherit
+}
+
+blockquote {
+	color: white;
+}
+
+/*social media links*/
+.social-media {
+	text-align: center;
+}
+
+.social-media ul {
+	padding-left: 0px;
+}
+
+.social-media ul li {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.social-media ul a {
+	color: white;
+}
+
+
+
+main {
+	background-color: #F0EBD8;
+	/**/
+	min-height: 400px;
+	/**/
+	margin-top: 30px;
+}
+/*fix this*/
+main h3 {
+	font-size: 40px;
+	font-weight: bold;
+	color: #1D2D44;
+	/*border: 2px solid black;*/
+	display: inline;
+	height: 100%;
+	padding: 10px;
+}
+
+/*main h3:before {
+	content: "";
+	position: absolute;
+	border: 2px solid black;
+	width: 250px;
+	height: 150%;
+	top:-40%;
+	left: 25%;
+}
+
+main h3:after {
+	
+}
+*/
+
+.personal-info {
+	margin-bottom: 20px;
+}
+
+.heading {
+	/*text-align: center;*/
+	/*height: 48px !important;*/
+	margin-bottom: 12px;
+}
+
+.skill-set {
+	min-height: 100px;
+	background-color: #748CAB;
+	border: 3px dashed #3E5C76;
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 5px;
+	margin-top: 10px;
+	/*margin-right: 20px;*/
+}
+
+.skill-set-logo {
+	height: 100px;
+	width: 100px;
+	border: 3px dotted #3E5C76;
+	border-radius: 50%;
+	float: left;
+	padding: 2.5px;
+}
+
+.box-set-logo {
+	height: 100px;
+	width: 100px;
+	border: 3px dotted #3E5C76;
+	border-radius: 5%;
+	float: left;
+}
+
+/*.skill-set-progress {
+	float: left;
+	overflow: hidden;
+}*/
+
+.skill-set h4,
+p {
+	margin:0px;
+	color: white;
+}
+
+.skill-set h4 {
+	font-size: 15px;
+	margin-top: 10px;
+	margin-left: 5px;
+	font-weight: bold;
+	display: block;
+	height: 50%;
+}
+
+.skill-set p {
+	font-size: 13px;
+	margin-top: 5px;
+	margin-left: 10px;
+	color: #F0EBD8;
+}
+
+.progress-container {
+	overflow: hidden;
+}
+
+.progress-container .progress {
+	height: 15px;
+	border: 3px solid black;
+	border-radius: 15px;
+}
+
+.progress-bar {
+	background-color: #F0EBD8;
+}
+
+
+/*education*/
+
+.educ-logo {
+	border: 5px dashed grey;
+	padding: 3px;
+}
+
+.description {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 20px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.description-info {
+	line-height: 17px;
+}
+
+.des-school {
+	font-size: 17px;
+	/*margin-bottom: 0px;*/
+}
+
+.des-loc {
+	font-size: 12px;
+	/*margin-top: 0px;*/
+}
+
+/*sample works*/
+.sample-works {
+	min-height:300px;
+	background-color:  #1D2D44;
+	border: none;
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.sample-works h3 {
+	color: white;
+}
+
+.sample-works .sample-heading {
+	/*text-align: center;*/
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-top: 3px dashed white;
+	border-radius: 10px 10px 0px 0px;
+	padding-top: 15px;
+}
+
+.sample-works .sample-heading h3 span {
+	border-bottom: 3px solid white;
+	padding-bottom: 0px;
+}
+
+.work {
+	padding: 5px;
+}
+
+.work img {
+	border: none;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.work-description {
+	background-color: #3E5C76; 
+	border: none;
+	border-radius: 0px 0px 5px 5px;
+
+}
+
+.work-description h4 {
+	color: white;
+	margin-top: 0px;
+	padding-top: 10px;
+	font-size: 30px;
+}
+
+.work-description p {
+	color: white;
+}
+
+.work-description hr {
+	margin-top: 5px;
+	margin-bottom:5px;
+	width: 70%;
+	opacity: 0.4;
+}
+
+footer {
+	background-color: #d6d6d6;
+	/**/
+	min-height: 300px;
+	/**/
+	padding: 20px;
+}
+
+/*contact email*/
+.input-group {
+	width: 100%;
+}
+
+#basic-addon1 {
+	width: 20%;
+	float: left;
+	height: 34px;
+	position: relative;
+}
+
+#basic-addon1:before {
+	display: block;	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#basic-addon2 {
+	width: 20%;
+	float: left;
+	height: 34px;
+	position: relative;
+}
+
+#basic-addon2:before {
+	display: block;	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.form-control {
+	width: 80% !important;
+	float: left;
+}
+
+textarea.form-control {
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100px;
+	max-height: 100px;
+}
+
+footer iframe {
+	width: 100%;
+}
+
+/*tablet*/
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+}
+
+
+/*desktop*/
+@media only screen and (min-width:992px) {
+	
+}
