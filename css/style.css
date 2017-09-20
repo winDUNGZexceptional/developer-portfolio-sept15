@@ -1,5 +1,5 @@
 body {
-	background-color: #F0EBD8;
+	background-color: #F9EAE1;
 }
 
 h1,
@@ -16,6 +16,10 @@ blockquote {
 	font-family: 'Prompt', sans-serif;
 }
 
+.margin {
+	margin-top: 20px;
+	padding:10px;
+}
 
 /*the header classsssssssssss*/
 header {
@@ -28,14 +32,15 @@ header {
 	min-height: 400px;
 	padding: 10px;
 	padding-top: 40px;
-	position: relative
+	position: relative;
+	box-shadow: inset 0px -40px 50px rgba(46,43,50,.9);
 }
 
 .sabog:after {
 	content: "";
 	width: 0px;
 	height: 0px;
-	border-top: 15px solid #2e2b32;
+	border-top: 15px solid rgba(46,43,50,.97);
 	border-left: 15px solid transparent;
 	/*border-bottom:60px solid white;*/
 	border-right: 15px solid transparent;
@@ -151,21 +156,22 @@ blockquote {
 
 
 main {
-	background-color: #F0EBD8;
+	background-color: #F9EAE1;
 	/**/
 	min-height: 400px;
 	/**/
 	margin-top: 30px;
+
 }
 /*fix this*/
 main h3 {
-	font-size: 40px;
+	font-size: 45px;
 	font-weight: bold;
 	color: #1D2D44;
 	/*border: 2px solid black;*/
 	display: inline;
 	height: 100%;
-	padding: 10px;
+	padding: 0px;
 }
 
 /*main h3:before {
@@ -183,14 +189,43 @@ main h3:after {
 }
 */
 
+main blockquote {
+	color: #1D2D44;
+}
+
+main p {
+	color: #1D2D44;
+}
+
 .personal-info {
 	margin-bottom: 20px;
 }
 
+.enclose {
+	background-color: #1D2D44;
+	border: 5px dashed #748CAB;
+	border-radius: 10px;
+}
+
+.enclose-aside {
+	background-color: #3E5C76;
+	border: 5px dashed #1D2D44;
+	border-radius: 10px;
+}
+
+/*.enclose:after {
+	position: absolute;
+	height: 150%;
+	width: 100%;
+	background-color: black;
+}*/
+
 .heading {
-	/*text-align: center;*/
+	/*change to initial on desktop*/
+	text-align: center; 
 	/*height: 48px !important;*/
 	margin-bottom: 12px;
+	padding-top: 30px;
 }
 
 .skill-set {
@@ -245,7 +280,7 @@ p {
 	font-size: 13px;
 	margin-top: 5px;
 	margin-left: 10px;
-	color: #F0EBD8;
+	color: #F9EAE1;
 }
 
 .progress-container {
@@ -259,21 +294,27 @@ p {
 }
 
 .progress-bar {
-	background-color: #F0EBD8;
+	background-color: #F9EAE1;
 }
 
 
 /*education*/
 
 .educ-logo {
-	border: 5px dashed grey;
+	border: 5px dashed #7D4F50;
 	padding: 3px;
+}
+
+.tuitt-logo {
+	border: 5px dashed #7D4F50;
+	padding: 10px;
+	border-radius: 10px;
 }
 
 .description {
 	font-weight: bold;
-	font-size: 20px;
-	line-height: 20px;
+	font-size: 21px;
+	line-height: 23px;
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
@@ -284,11 +325,13 @@ p {
 
 .des-school {
 	font-size: 17px;
+	color: #748CAB;
 	/*margin-bottom: 0px;*/
 }
 
 .des-loc {
 	font-size: 12px;
+	color: white;
 	/*margin-top: 0px;*/
 }
 
@@ -304,15 +347,16 @@ p {
 
 .sample-works h3 {
 	color: white;
+	/*font-size: 60px;*/
 }
 
 .sample-works .sample-heading {
 	/*text-align: center;*/
-	margin-top: 10px;
+	margin-top: 15px;
 	margin-bottom: 20px;
 	border-top: 3px dashed white;
 	border-radius: 10px 10px 0px 0px;
-	padding-top: 15px;
+	padding-top: 30px;
 }
 
 .sample-works .sample-heading h3 span {
